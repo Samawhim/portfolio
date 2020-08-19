@@ -1,0 +1,47 @@
+#presentation {
+  width: 100%;
+  display: flex;
+  .description {
+    background-color: salmon;
+    color: rgb(255, 223, 196);
+    font-size: 18px;
+    width: 65%;
+    padding: 4rem 4rem 4rem 10rem;
+    h1 {
+      color: white;
+      font-size: 13px;
+      text-transform: uppercase;
+    }
+  }
+  .softwares {
+    background-color: rgb(255, 223, 196);
+    color: salmon;
+    font-size: 18px;
+    width: 35%;
+    padding: 4rem 4rem 4rem 4rem;
+    h1 {
+      color: salmon;
+      font-size: 13px;
+      text-transform: uppercase;
+    }
+  }
+}
+.skills {
+  display: flex;
+  background-color: rgb(240, 240, 240);
+  width: 100%;
+  padding: 3rem 10rem 3rem 10rem;
+  h1 {
+    color: rgb(99, 99, 99);
+    font-size: 13px;
+    text-transform: uppercase;
+  }
+  .card {
+    border-radius: 15px;
+    width: 30%;
+    border: none;
+    .card-img {
+      border-radius: 15px 15px 0px 0px;
+    }
+  }
+}

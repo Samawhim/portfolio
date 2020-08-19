@@ -1,4 +1,25 @@
-<div class="container-fluid py-1">
-  <h1>Home page 🚀</h1>
-  <%= link_to "More about us", about_path %>
+<div id='presentation'>
+  <div class='description'>
+    <h1>about me</h1>
+    <p>After 8 years working as a graphic/web designer, specializing in visual identity/communication and interface design, I learned through Le Wagon's coding bootcamp to code and manage web developement projects to start over as a Web Developer
+    <br><br>Can't wait to exchange with you all ;)</p>
+  </div>
+  <div class='softwares'>
+    <h1>softwares</h1>
+    <%= link_to "More about us", about_path %>
+    <ul>
+      <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+      <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+      <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+    </ul>
+  </div>
+</div>
+<div class='skills'>
+  <div class='card'>
+    <%= image_tag 'photo_CV.png', class: 'card-img', alt: 'design' %>
+    <div class='card-info'>
+      <h1>Design</h1>
+      <p>Hello</p>
+    </div>
+  </div>
 </div>
