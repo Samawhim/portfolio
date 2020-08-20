@@ -11,6 +11,12 @@
     box-shadow: 2px 0px 2px lightgrey;
     position: sticky;
     top: 0px;
+    a {
+      color: black;
+      :hover {
+        color: rgb(55, 55, 55);
+      }
+    }
 }
 
 #perso-pic {
