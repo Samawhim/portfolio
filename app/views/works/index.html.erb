@@ -1,0 +1,12 @@
+<%= link_to "BACK", root_path %>
+<div class="skills w100">
+  <% @works.each do |work| %>
+   <div class='card'>
+      <%= image_tag 'Illustrations-01.jpg', class: 'card-img', alt: 'design' %>
+      <div class='card-info'>
+        <h1><%= work.name %></h1>
+        <p><%= work.description %></p>
+      </div>
+    </div>
+  <% end %>
+</div>

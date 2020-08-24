@@ -9,6 +9,7 @@
   <div class='softwares'>
     <h1>softwares</h1>
     <%= link_to "More about us", about_path %>
+    <%= link_to "INDEX", works_path %>
     <ul>
       <li><a href="#"><i class="fab fa-instagram"></i></a></li>
       <li><a href="#"><i class="fab fa-facebook"></i></a></li>
@@ -38,4 +39,15 @@
       <p>Art direction / Branding and all the necessary print communication support</p>
     </div>
   </div>
+</div>
+<div class="skills w100">
+  <% @works.each do |work| %>
+   <div class='card'>
+      <%= image_tag 'Illustrations-01.jpg', class: 'card-img', alt: 'design' %>
+      <div class='card-info'>
+        <h1><%= work.name %></h1>
+        <p><%= work.description %></p>
+      </div>
+    </div>
+  <% end %>
 </div>

@@ -6,6 +6,8 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
+Work.destroy_all
+
 apy = Work.create!(
   name: "Art Press'Yourself",
   category: "Design graphique",
@@ -37,13 +39,20 @@ soumano = Work.create!(
   My mission was to accompany Soumano through it's transformation with a durable identity to affirm the premium quality of it's creations and collections to come."
 )
 
-soumano = Work.create!(
-  name: "Soumano",
+umama = Work.create!(
+  name: "Umama",
   category: "Design graphique",
   description: "-
-  Handmade and never replicated, each piece by Soumano is unique. Born from assumed multicultural influences, beetween Paris and Dakar, the fashion brand creates colorful and high quality designs.
+  Umama is restaurant which spécialises in African food. Based in Paris' area, their jungle theme decoration and exquisite food attracts lots of clients every night.
   
-  My mission was to accompany Soumano through it's transformation with a durable identity to affirm the premium quality of it's creations and collections to come."
+  -
+  Art direction & Visual Identity : Harold Ngano / Brand Opera
+  Photo credit : Harold Ngano
+  
+  
+  Work
+  -
+  This is work I've done with the agency Brand Opera. My mission was to redesign the already existing supports, capture the restaurant's unique mood and create social media content on New year Eve's occasion."
 )
 
 illusio = Work.create!(
@@ -59,3 +68,5 @@ illusio = Work.create!(
   
   Here are a few exemples of the projects I worked on at Illusio. These includes the creation of logos, visual identities, brochures, flyers, advertising posters, emailings and landing pages."
 )
+
+p "Created #{Work.count} movies"

@@ -2,7 +2,7 @@ class WorksController < ApplicationController
   before_action :set_work, only: [:show]
   
   def index
-    @work = Work.all
+    @works = Work.all
   end
 
   def show

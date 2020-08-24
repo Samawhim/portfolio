@@ -3,6 +3,7 @@ class PagesController < ApplicationController
   end
 
   def home
+    @works = Work.last(4)
   end
   
 end
