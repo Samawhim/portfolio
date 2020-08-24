@@ -2,20 +2,23 @@
   width: 100%;
   display: flex;
   .description {
-    background-color: salmon;
+    background-color: #3FA9F5;
     color: rgb(255, 223, 196);
     font-size: 18px;
     width: 65%;
     padding: 4rem 4rem 4rem 10rem;
     h1 {
+      font-family: 'Viga', sans-serif;
       color: white;
       font-size: 12px;
       text-transform: uppercase;
     }
     h3 {
-      color: rgb(255, 223, 196);
+      font-family: 'Viga', sans-serif;
+      color: rgb(255, 255, 255);
       font-size: 64px;
       text-transform: uppercase;
+      letter-spacing: 2px;
     }
     p.intro {
       color: rgb(255, 223, 196);
@@ -24,13 +27,13 @@
     }
   }
   .softwares {
-    background-color: rgb(255, 223, 196);
-    color: salmon;
+    //background-color: rgb(255, 223, 196);
+    color: #3FA9F5;
     font-size: 18px;
     width: 35%;
     padding: 4rem 4rem 4rem 4rem;
     h1 {
-      color: salmon;
+      color: #3FA9F5;
       font-size: 12px;
       text-transform: uppercase;
     }
@@ -39,7 +42,8 @@
 
 .skills {
   display: flex;
-  background-color: rgb(240, 240, 240);
+  justify-content: space-between;
+  background-color: rgb(255, 223, 196);
   width: 100%;
   padding: 3rem 15rem 3rem 15rem;
   h1 {
@@ -49,12 +53,15 @@
   }  
 }
 .card {
+  background-color: rgb(255, 224, 199);
   border-radius: 10px;
   width: 30%;
-  border: 1px solid rgb(225, 225, 225);
+  //border: 1px solid rgb(225, 225, 225);
+  border: 1px solid rgb(255, 208, 167);
   transition: .18s ease all;
   &:hover {
-    box-shadow: 0px 1px 4px rgba(0,0,0,.05), 0px 2px 3px rgba(0,0,0,.08), 0px 1px 3px rgba(0,0,0,.1);
+    background-color: rgb(255, 226, 203);
+    box-shadow: 0px 1px 4px rgba(177, 84, 3, 0.05), 0px 2px 3px rgba(177, 84, 3,.08), 0px 1px 3px rgba(177, 84, 3,.1);
     transform: translateY(-5px);
     //transition: .3s ease all;
   }
@@ -65,7 +72,8 @@
 .card-info {
   padding: 1rem 2.5rem 0.5rem 2.5rem;
   h1 {
-    color: rgb(99, 99, 99);
+    font-family: 'Viga', sans-serif;
+    color: rgb(70, 70, 70);
     font-size: 12px;
     text-transform: uppercase;
   }
