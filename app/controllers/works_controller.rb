@@ -12,6 +12,5 @@ class WorksController < ApplicationController
 
   def set_work
     @work = Work.find(params[:id])
-    authorize_work
   end
 end
