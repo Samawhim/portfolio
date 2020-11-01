@@ -1,49 +1,65 @@
-<div id='presentation'>
-  <div class='description'>
-    <h1>About me</h1>
-    <h3>The big picture</h3>
-    <p class='intro'>After 8 years working as a graphic/web designer, specializing in visual identity/communication and interface design</p> 
-    <p>I learned through Le Wagon's coding bootcamp to code and manage web developement projects to start over as a Web Developer
-    <br><br>Can't wait to exchange with you all ;)</p>
+    <div id="home-banner">
+      <div class='container'>
+        <h3>The big picture</h3>
+        <p class='intro'>After 8 years working as a graphic/web designer, specializing in visual identity/communication and interface design</p> 
+        <p>I learned through Le Wagon's coding bootcamp to code and manage web developement.</p>
+      </div>
+    </div>
+
+    <%# <div class='partenaires'>
+
+    </div> %>
+
+
+<div id="home-content">
+  <div id="home-left">
+    <div class='skills'>
+      <div class='card'>
+        <%= image_tag 'Illustrations-01.png', class: 'card-img', alt: 'design' %>
+        <div class='card-info'>
+          <h1>Graphic design</h1>
+          <p>Art direction / Branding and all the necessary print communication support</p>
+        </div>
+      </div>
+      <div class='card'>
+        <%= image_tag 'Illustrations-02.png', class: 'card-img2', alt: 'design' %>
+        <div class='card-info'>
+          <h1>UI / UX design</h1>
+          <p>Art direction / Branding and all the necessary print communication support</p>
+        </div>
+      </div>
+      <div class='card'>
+        <%= image_tag 'Illustrations-03.png', class: 'card-img3', alt: 'design' %>
+        <div class='card-info'>
+          <h1>Web developement</h1>
+          <p>Art direction / Branding and all the necessary print communication support</p>
+        </div>
+      </div>
+    </div>
   </div>
-  <div class='softwares'>
-    <h1>softwares</h1>
-    <%= link_to "More about us", about_path %>
-    <%= link_to "INDEX", works_path %>
-    <ul>
-      <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-      <li><a href="#"><i class="fab fa-facebook"></i></a></li>
-      <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-    </ul>
+
+  <div id="home-right">
+    <div class='softwares'>
+      <div id='perso-pic'></div>
+      <h2>Harold Ngano</h2>
+      <h1>Developpeur Full-Stack</h1>
+      <h3><i class="fas fa-map-marker-alt"></i> Paris, France</h3>
+      <ul>
+        <li><%= link_to "h.ngano@gmail.com", root_path, class: "navbar-email" %></li>
+        <li><a target="_blank" href="https://www.linkedin.com/in/harold-ngano-10a9a457/"><i class="fab fa-linkedin-in"></i></a></li>
+        <li><a target="_blank" href="https://github.com/Samawhim"><i class="fab fa-github"></i></a></li>
+      </ul>
+      <%= link_to "See work", works_path, class: "button1" %>
+      <h1>softwares</h1>
+    </div>
   </div>
 </div>
-<div class='skills'>
-  <div class='card'>
-    <%= image_tag 'Illustrations-01.jpg', class: 'card-img', alt: 'design' %>
-    <div class='card-info'>
-      <h1>Graphic design</h1>
-      <p>Art direction / Branding and all the necessary print communication support</p>
-    </div>
-  </div>
-  <div class='card'>
-    <%= image_tag 'Illustrations-02.jpg', class: 'card-img', alt: 'design' %>
-    <div class='card-info'>
-      <h1>UI / UX design</h1>
-      <p>Art direction / Branding and all the necessary print communication support</p>
-    </div>
-  </div>
-  <div class='card'>
-    <%= image_tag 'Illustrations-03.jpg', class: 'card-img', alt: 'design' %>
-    <div class='card-info'>
-      <h1>Web developement</h1>
-      <p>Art direction / Branding and all the necessary print communication support</p>
-    </div>
-  </div>
-</div>
-<div class="skills w100">
+
+
+<div class="skills2">
   <% @works.each do |work| %>
-   <div class='card'>
-      <%= image_tag 'Illustrations-01.jpg', class: 'card-img', alt: 'design' %>
+    <div class='card'>
+      <%= image_tag 'Illustrations-01.png', class: 'card-img', alt: 'design' %>
       <div class='card-info'>
         <h1><%= work.name %></h1>
         <p><%= work.description %></p>
@@ -74,7 +90,7 @@
 <div class='app'>
   <div class='app1'>
     <div class='appcard1'>
-      <%= image_tag 'Illustrations-01.jpg', class: 'appcard1-img', alt: 'design' %>
+      <%= image_tag 'Illustrations-01.png', class: 'appcard1-img', alt: 'design' %>
       <div class='appcard1-info'>
         <h1>Winter<br>2020</h1>
         <div class='appbutton1'>
@@ -86,7 +102,7 @@
 
   <div class='app2'>  
     <div class='appcard1'>
-      <%= image_tag 'Illustrations-01.jpg', class: 'appcard1-img', alt: 'design' %>
+      <%= image_tag 'Illustrations-01.png', class: 'appcard1-img', alt: 'design' %>
       <div class='appcard1-info'>
         <h1>Winter<br>2020</h1>
         <div class='appbutton1'>
@@ -98,7 +114,7 @@
 
   <div class='app3'>  
     <div class='appcard1'>
-      <%= image_tag 'Illustrations-01.jpg', class: 'appcard1-img', alt: 'design' %>
+      <%= image_tag 'Illustrations-01.png', class: 'appcard1-img', alt: 'design' %>
       <div class='appcard1-info'>
         <h1>Winter<br>2020</h1>
         <div class='appbutton1'>

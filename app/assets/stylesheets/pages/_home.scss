@@ -1,91 +1,186 @@
-#presentation {
-  width: 100%;
+#home-content {
   display: flex;
-  .description {
-    background-color:white;
-    background-image: url(asset-path("Seine_and_Eiffel_Tower_from_Tour_Saint_Jacques_2013-08.jpg"));
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    color: rgb(255, 223, 196);
-    font-size: 18px;
-    width: 65%;
-    padding: 4rem 4rem 4rem 10rem;
-    h1 {
-      font-family: 'Viga', sans-serif;
-      color: white;
-      font-size: 12px;
-      text-transform: uppercase;
-    }
-    h3 {
-      font-family: 'Viga', sans-serif;
-      color: rgb(255, 255, 255);
-      font-size: 64px;
-      text-transform: uppercase;
-      letter-spacing: 2px;
-    }
-    p.intro {
-      color: rgb(255, 223, 196);
-      font-size: 26px;
-      font-weight: 600;
-    }
+  height: 100vh;
+}
+
+// HOME-LEFT //
+
+// #home-left {
+//   width: 70%;
+// }
+
+// Banner //
+
+#home-banner {
+  background: linear-gradient(#a2b0c9, rgb(240, 240, 240));
+  // background: linear-gradient(217deg, rgba(255,0,0,.8), rgba(255,0,0,0) 70.71%),
+  //           linear-gradient(127deg, rgba(0,255,0,.8), rgba(0,255,0,0) 70.71%),
+  //           linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%);
+  // background-image: url(asset-path("Seine_and_Eiffel_Tower_from_Tour_Saint_Jacques_2013-08.jpg"));
+  // background-repeat: no-repeat;
+  // background-size: cover;
+  // background-position: center; 
+}
+
+.container {
+  width: 100%;
+  padding: 4% 24% 1.4% .5%;
+  text-align: left;
+  color: white;
+  font-size: 18px;
+  width: 100%;
+  h1 {
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    font-size: 12px;
+    text-transform: uppercase;
   }
-  .softwares {
-    background-color: rgb(59, 59, 59);
-    color: #3FA9F5;
-    font-size: 18px;
-    width: 35%;
-    padding: 4rem 4rem 4rem 4rem;
+  h3 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    color: white;
+    font-size: 71px;
+    line-height: 79px;
+    letter-spacing: -1px;
+    margin-bottom: 2.5%;
+  }
+  p.intro {
+    font-family: 'Poppins', sans-serif;
+    color:white;
+    font-size: 24px;
+    font-weight: 600;
+  }
+}
+
+// Partenaires //
+
+.partenaires {
+  background-color: rgb(5, 5, 5);
+  height: 70px;
+}
+
+// Skill-cards //
+
+.skills {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 16px;
+  flex-grow: 1;
+  padding: 0% 36% 2% 10%;
+  background-color: rgb(240, 240, 240);
+}
+
+.card {
+  height: 100%;
+  width: 100%;
+  background-color:white;
+  border-radius: 10px;
+  border: 1px solid rgb(230, 230, 230);
+  transition: .18s ease all;
+  &:hover {
+    background-color: white;
+    box-shadow: 0px 1px 4px rgba(120, 120, 120, 0.05), 0px 2px 3px rgba(120, 120, 120,.08), 0px 1px 3px rgba(120, 120, 120,.1);
+    transform: translateY(-5px);
+    //transition: .3s ease all;
+  }
+  .card-img {
+    width: 100%; 
+    border-radius: 10px 10px 0px 0px;
+    background: linear-gradient(#ff76cb, #13bcff);
+  }
+  .card-img2 {
+    width: 100%; 
+    border-radius: 10px 10px 0px 0px;
+    background: linear-gradient(rgba(65,226,186,1) 0%, rgba(42,204,171,1) 63%, rgba(20,183,185,1) 100%);
+    // background: linear-gradient(#0cb2ff, #21ffaa);
+  }
+  .card-img3 {
+    width: 100%; 
+    border-radius: 10px 10px 0px 0px;
+    background: linear-gradient(#ff8d0c, #a444ff);
+  }
+  .card-info {
+    padding: 1rem 2rem 1.5rem 2rem;
     h1 {
-      color: #3FA9F5;
-      font-size: 12px;
-      text-transform: uppercase;
+      font-family: 'Poppins', sans-serif;
+      font-weight: 700;
+      color: rgb(25, 25, 25);
+      font-size: 15px;
+      //text-transform: uppercase;
+    }
+    p {
+      color: rgba(25, 25, 25, .8);
+      font-size: 14px;
+      line-height: 18px;
+      margin: 0rem;
     }
   }
 }
 
-.skills {
-  display: flex;
-  justify-content: space-between;
-  background-color: rgb(255, 255, 255);
+// HOME-RIGHT //
+
+#home-right {
+  width: 24%;
+  position: fixed;
+  top: 16%;
+  right: 10%;
+}
+
+.softwares {
+  justify-items: center;
+  text-align: center;
+  height: 560px;
   width: 100%;
-  padding: 3rem 25rem 3rem 25rem;
+  background-color: rgb(255, 255, 255);
+  color: rgb(25, 25, 25);
+  font-size: 18px;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0px 1px 3px rgba(180, 180, 180,.7);
   h1 {
-    color: rgb(99, 99, 99);
+    // color: #3FA9F5;
+    font-size: 12px;
+    text-transform: uppercase;
+  }
+  #perso-pic {
+    background-image: url(asset-path("me.jpg"));
+    background-repeat: no-repeat;
+    background-size: cover;
+    //background-position: 80% 10%;
+    width: 40%;
+    height: 25%;
+    border-radius: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+
+
+
+
+
+
+.skills2 {
+  
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 10px;
+  padding: 20px 50px 20px 120px;
+  flex-grow: 1;
+  background-color: rgb(255, 255, 255);
+  h1 {
+    color: rgb(25, 25, 25);
     font-size: 12px;
     text-transform: uppercase;
   }  
 }
-.card {
-  background-color:white;
-  border-radius: 10px;
-  width: 30%;
-  //border: 1px solid rgb(225, 225, 225);
-  border: 1px solid rgb(240, 240, 240);
-  transition: .18s ease all;
-  &:hover {
-    background-color: white;
-    box-shadow: 0px 1px 4px rgba(200, 200, 200, 0.05), 0px 2px 3px rgba(200, 200, 200,.08), 0px 1px 3px rgba(200, 200, 200,.1);
-    transform: translateY(-5px);
-    //transition: .3s ease all;
-  }
-}
-.card-img {
-  border-radius: 10px 10px 0px 0px;
-}
-.card-info {
-  padding: 1rem 2.5rem 0.5rem 2.5rem;
-  h1 {
-    font-family: 'Viga', sans-serif;
-    color: rgb(70, 70, 70);
-    font-size: 12px;
-    text-transform: uppercase;
-  }
-  p {
-    color: rgb(99, 99, 99);
-    font-size: 15px;
-  }
-}
+
+
+
+
 
 // COMPONENTS //
 
@@ -123,7 +218,7 @@
   padding: 1rem 0rem;
   margin-top: none;
   h1 {
-    font-family: 'Viga', sans-serif;
+    font-family: 'Poppins', sans-serif;
     color: rgb(70, 70, 70);
     font-size: 16px;
     margin: 0rem;
@@ -168,7 +263,7 @@
   padding: 20px;
   border-radius: 25px 0px 25px 25px;
   h1 {
-    font-family: 'Viga', sans-serif;
+    font-family: 'Poppins', sans-serif;
     text-align: left;
     color: white;
     font-size: 15px;
@@ -225,7 +320,7 @@
   padding: 15px;
   h1 {
     position: absolute;
-    font-family: 'Viga', sans-serif;
+    font-family: 'Poppins', sans-serif;
     color: rgb(70, 70, 70);
     font-size: 14px;
     margin: 0rem;
@@ -250,7 +345,7 @@
   h1 {
     position: absolute;
     bottom: 140px; left: 10px;
-    font-family: 'Viga', sans-serif;
+    font-family: 'Poppins', sans-serif;
     color: rgb(70, 70, 70);
     font-size: 14px;
     margin: 0rem;

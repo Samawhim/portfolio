@@ -1,0 +1,86 @@
+<div class='skills'>
+      <div class='card'>
+        <%= image_tag 'Illustrations-01.jpg', class: 'card-img', alt: 'design' %>
+        <div class='card-info'>
+          <h1>Graphic design</h1>
+          <p>Art direction / Branding and all the necessary print communication support</p>
+        </div>
+      </div>
+      <div class='card'>
+        <%= image_tag 'Illustrations-02.jpg', class: 'card-img', alt: 'design' %>
+        <div class='card-info'>
+          <h1>UI / UX design</h1>
+          <p>Art direction / Branding and all the necessary print communication support</p>
+        </div>
+      </div>
+      <div class='card'>
+        <%= image_tag 'Illustrations-03.jpg', class: 'card-img', alt: 'design' %>
+        <div class='card-info'>
+          <h1>Web developement</h1>
+          <p>Art direction / Branding and all the necessary print communication support</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  .card {
+  height: 100%;
+  width: 100%;
+  background-color:white;
+  border-radius: 10px;
+  border: 1px solid rgb(240, 240, 240);
+  transition: .18s ease all;
+  &:hover {
+    background-color: white;
+    box-shadow: 0px 1px 4px rgba(200, 200, 200, 0.05), 0px 2px 3px rgba(200, 200, 200,.08), 0px 1px 3px rgba(200, 200, 200,.1);
+    transform: translateY(-5px);
+    //transition: .3s ease all;
+  }
+  .card-img {
+    border-radius: 10px 10px 0px 0px;
+  }
+  .card-info {
+    padding: 1rem 2.5rem 0.5rem 2.5rem;
+    h1 {
+      font-family: 'Viga', sans-serif;
+      color: rgb(70, 70, 70);
+      font-size: 12px;
+      text-transform: uppercase;
+    }
+    p {
+      color: rgb(99, 99, 99);
+      font-size: 15px;
+    }
+  }
+}
+
+
+.card {
+  height: 100%;
+  width: 100%;
+  padding: 2rem 2rem 2rem 2rem;
+  background: linear-gradient(#e66465, #9198e5);
+  border-radius: 30px;
+  transition: .18s ease all;
+  &:hover {
+    background-color: white;
+    box-shadow: 0px 1px 4px rgba(200, 200, 200, 0.05), 0px 2px 3px rgba(200, 200, 200,.08), 0px 1px 3px rgba(200, 200, 200,.1);
+    transform: translateY(-5px);
+    //transition: .3s ease all;
+  }
+  .card-info {
+    h1 {
+      font-family: 'Viga', sans-serif;
+      color: white;
+      font-size: 15px;
+      text-transform: uppercase;
+    }
+    p {
+      color: white;
+      font-size: 14px;
+      line-height: 18px;
+      margin: 0rem;
+    }
+  }
+}

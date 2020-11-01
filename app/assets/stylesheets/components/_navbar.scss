@@ -1,24 +1,21 @@
 .navbar {
-    background-color: white;
-    height: 70px;
-    padding: 0.5rem 10rem 0.5rem 10rem!important;
-    position: relative;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0.5rem 1rem;
-    box-shadow: 2px 0px 2px lightgrey;
-    position: sticky;
-    top: 0px;
-    a {
-      color: black;
-      :hover {
-        color: rgb(55, 55, 55);
-      }
+  background-color: white;
+  height: 55px;
+  padding: 0.5rem 10rem 0.5rem 10rem!important;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 1rem;
+  box-shadow: 2px 0px 2px lightgrey;
+  position: sticky;
+  top: 0px;
+  a {
+    color: rgb(25, 25, 25);
+    font-weight: 600;
+    &:hover {
+      color: rgb(55, 55, 55);
     }
-}
-
-#perso-pic {
-    border-radius: 50%;
+  }
 }
