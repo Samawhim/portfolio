@@ -170,7 +170,7 @@
     }
   }
   #perso-pic {
-    background-image: url(asset-path("me.jpg"));
+    background-image: url(asset-path("softwares/me.jpg"));
     background-repeat: no-repeat;
     background-size: cover;
     // background-position: 80% 10%;
@@ -207,27 +207,28 @@
   }
   .softwares {
     width: 100%;
-    padding: 7% 10%;
+    padding: 7% 12%;
     background-color: rgb(70, 70, 70);
     border-radius: 20px;
-    .logiciels {
-      display: inline-flex;
-      flex-wrap: wrap;
-      gap: 20px;
-      list-style-type: none;
-      margin: 0rem;
-      padding: 0rem 0rem 6% 0rem;      
-      .icons {
-        width: 30px; height: 30px;
-      }
-    }
     h1 {
-      text-align: left;
+      text-align: center;
       font-size: 11px;
       color: rgba(255, 255, 255, 0.7);
       font-weight: 400;
       text-transform: uppercase;
       letter-spacing: 1px;
+      padding-bottom: 3%;
+    }
+    .logiciels {
+      display: inline-flex;
+      flex-wrap: wrap;
+      gap: 12px 16px;
+      list-style-type: none;
+      margin: 0rem;
+      padding: 0rem 0rem 2% 0rem;      
+      .icons {
+        width: 30px; height: 30px;
+      }
     }
   }
 }
