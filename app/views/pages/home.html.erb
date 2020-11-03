@@ -39,18 +39,26 @@
   </div>
 
   <div id="home-right">
-    <div class='softwares'>
+    <div class='about'>
       <div id='perso-pic'></div>
       <h2>Harold Ngano</h2>
-      <h1>Developpeur Full-Stack</h1>
+      <h1>Développeur Full-Stack</h1>
       <h3><i class="fas fa-map-marker-alt"></i> Paris, France</h3>
-      <ul>
-        <li><%= link_to "h.ngano@gmail.com", root_path, class: "navbar-email" %></li>
+      <ul class='reseaux'>
         <li><a target="_blank" href="https://www.linkedin.com/in/harold-ngano-10a9a457/"><i class="fab fa-linkedin-in"></i></a></li>
         <li><a target="_blank" href="https://github.com/Samawhim"><i class="fab fa-github"></i></a></li>
+        <li><%= link_to root_path do %><i class="fas fa-envelope"></i><% end %></li>
       </ul>
-      <%= link_to "See work", works_path, class: "button1" %>
-      <h1>softwares</h1>
+      <%= link_to works_path do %><p class='button1'>See work</p><% end %>
+      <div class='softwares'>
+        <h1>used softwares</h1>
+        <ul class='logiciels'>
+          <li><%= image_tag 'logo_ruby-01.png', class: 'icons', alt: 'design' %></li>
+          <li><%= image_tag 'Portfolio-icons.png', class: 'icons', alt: 'design' %></li>
+          <li><a target="_blank" href="https://github.com/Samawhim"><i class="fab fa-github"></i></a></li>
+          <li><%= link_to root_path do %><i class="fas fa-envelope"></i><% end %></li>
+      </ul>
+      </div>
     </div>
   </div>
 </div>
@@ -70,7 +78,7 @@
 
 <div class='components'>
   <div class='card1'>
-    <%= image_tag 'photo_CV.png', class: 'card1-img', alt: 'design' %>
+    <%= image_tag 'me.jpg', class: 'card1-img', alt: 'design' %>
     <div class='card1-info'>
       <h1>Hello</h1>
     </div>
@@ -79,7 +87,7 @@
     </div>
   </div>
   <div class='card2'>
-    <%= image_tag 'photo_CV.png', class: 'card2-img', alt: 'design' %>
+    <%= image_tag 'me.jpg', class: 'card2-img', alt: 'design' %>
     <div class='button2'>
       <h1>Lucy</h1>
       <p>Influenceuse</p>
