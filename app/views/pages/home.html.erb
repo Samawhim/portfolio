@@ -1,15 +1,14 @@
-    <div id="home-banner">
-      <div class='container'>
-        <h3>The big picture</h3>
-        <p class='intro'>After 8 years working as a graphic/web designer, specializing in visual identity/communication and interface design</p> 
-        <p>I learned through Le Wagon's coding bootcamp to code and manage web developement.</p>
-      </div>
-    </div>
+<div id="home-banner">
+  <div class='container'>
+    <h3>The big picture</h3>
+    <p class='intro'>I collaborate with ambitious brands and people.<br>Let's build something great together.</p> 
+    <p>I learned through Le Wagon's coding bootcamp to code and manage web developement.</p>
+  </div>
+</div>
 
-    <%# <div class='partenaires'>
+<%# <div class='partenaires'>
 
-    </div> %>
-
+</div> %>
 
 <div id="home-content">
   <div id="home-left">
@@ -18,7 +17,7 @@
         <%= image_tag 'Illustrations-01.png', class: 'card-img', alt: 'design' %>
         <div class='card-info'>
           <h1>Graphic design</h1>
-          <p>Art direction / Branding and all the necessary print communication support</p>
+          <p>Vous souhaitez créer ou rafraîchir votre logo et identité visuelle ?</p>
         </div>
       </div>
       <div class='card'>
@@ -44,12 +43,10 @@
       <h2>Harold Ngano</h2>
       <h1>Développeur Full-Stack</h1>
       <h3><i class="fas fa-map-marker-alt"></i> Paris, France</h3>
-      <ul class='reseaux'>
-        <li><a target="_blank" href="https://www.linkedin.com/in/harold-ngano-10a9a457/"><i class="fab fa-linkedin-in"></i></a></li>
-        <li><a target="_blank" href="https://github.com/Samawhim"><i class="fab fa-github"></i></a></li>
-        <li><%= link_to root_path do %><i class="fas fa-envelope"></i><% end %></li>
-      </ul>
-      <%= link_to works_path do %><p class='button1'>See work</p><% end %>
+      <div class='buttons'>
+        <%= link_to works_path do %><div class='btn-p'>Contact me</div><% end %>
+        <%= link_to works_path do %><div class='btn-s'>See work</div><% end %>
+      </div>
       <div class='softwares'>
         <h1>used languages & softwares</h1>
         <ul class='logiciels'>
@@ -64,76 +61,6 @@
           <li><%= image_tag 'softwares/dw.png', class: 'icons', alt: 'Dreamweaver' %></li>
           <li><%= image_tag 'softwares/xd.png', class: 'icons', alt: 'Adobe XD' %></li>
       </ul>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-<div class="skills2">
-  <% @works.each do |work| %>
-    <div class='card'>
-      <%= image_tag 'Illustrations-01.png', class: 'card-img', alt: 'design' %>
-      <div class='card-info'>
-        <h1><%= work.name %></h1>
-        <p><%= work.description %></p>
-      </div>
-    </div>
-  <% end %>
-</div>
-
-<div class='components'>
-  <div class='card1'>
-    <%#= image_tag 'me.jpg', class: 'card1-img', alt: 'design' %>
-    <div class='card1-info'>
-      <h1>Hello</h1>
-    </div>
-    <div class='button1'>
-      Choose
-    </div>
-  </div>
-  <div class='card2'>
-    <%#= image_tag 'me.jpg', class: 'card2-img', alt: 'design' %>
-    <div class='button2'>
-      <h1>Lucy</h1>
-      <p>Influenceuse</p>
-    </div>
-  </div>
-</div>
-
-<div class='app'>
-  <div class='app1'>
-    <div class='appcard1'>
-      <%= image_tag 'Illustrations-01.png', class: 'appcard1-img', alt: 'design' %>
-      <div class='appcard1-info'>
-        <h1>Winter<br>2020</h1>
-        <div class='appbutton1'>
-          738
-        </div>
-      </div>
-    </div>
-  </div>  
-
-  <div class='app2'>  
-    <div class='appcard1'>
-      <%= image_tag 'Illustrations-01.png', class: 'appcard1-img', alt: 'design' %>
-      <div class='appcard1-info'>
-        <h1>Winter<br>2020</h1>
-        <div class='appbutton1'>
-          738
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class='app3'>  
-    <div class='appcard1'>
-      <%= image_tag 'Illustrations-01.png', class: 'appcard1-img', alt: 'design' %>
-      <div class='appcard1-info'>
-        <h1>Winter<br>2020</h1>
-        <div class='appbutton1'>
-          738
-        </div>
       </div>
     </div>
   </div>

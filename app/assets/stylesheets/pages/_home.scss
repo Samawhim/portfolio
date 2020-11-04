@@ -1,6 +1,6 @@
 #home-content {
   display: flex;
-  height: 100vh;
+  //height: 100vh;
 }
 
 // HOME-LEFT //
@@ -24,7 +24,7 @@
 
 .container {
   width: 100%;
-  padding: 3% 26% 1.4% 0%;
+  padding: 2.5% 26% 1.4% 0%;
   text-align: center;
   color: rgba(25, 25, 25, .8);
   font-size: 18px;
@@ -46,7 +46,7 @@
   }
   p.intro {
     font-family: 'Poppins', sans-serif;
-    color: rgba(25, 25, 25, .8);
+    color: rgba(25, 25, 25, .9);
     font-size: 24px;
     font-weight: 600;
   }
@@ -122,22 +122,24 @@
 
 #home-right {
   width: 24%;
+  height: 100vh;
   position: fixed;
-  top: 16%;
+  top: 14%;
+  bottom: 14%;
   right: 10%;
 }
 
 .about {
   text-align: center;
-  height: 560px;
+  //height: 560px;
   width: 100%;
   background-color: rgb(255, 255, 255);
-  color: rgb(25, 25, 25);
   font-size: 18px;
   padding: 6% 10% 10% 10%;
   border-radius: 15px;
   box-shadow: 0px 1px 3px rgba(180, 180, 180,.7);
   h2 {
+    color: rgba(25, 25, 25, 1);
     padding-top: 5%;
     font-size: 26px;
     font-weight: 600;
@@ -154,61 +156,58 @@
     color: rgba(25, 25, 25, .8);
     font-size: 16px;
   }
-  .reseaux {
-    display: inline-flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    list-style-type: none;
-    margin: 0rem;
-    padding: 0rem 0rem 6% 0rem;
-    a {
-      font-size: 20px;
-      color: rgba(25, 25, 25, .5);
-      &:hover {
-        color: rgba(89, 175, 240, 0.9);
-      }
-    }
-  }
   #perso-pic {
     background-image: url(asset-path("softwares/me.jpg"));
     background-repeat: no-repeat;
     background-size: cover;
-    // background-position: 80% 10%;
-    width: 40%;
-    height: 25%;
+    width: 17%;
+    padding: 17%;
     border-radius: 50%;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
-    //border: solid rgb(240, 240, 240) 1px;
+    margin: 0% auto 0% auto;
     box-shadow: 0px 4px 3px rgba(240, 240, 240, 1);
   }
-  a {
-    text-decoration: none;
-    .button1 {
-      width: 60%;
-      text-align: center;
-      background: linear-gradient(133deg, #41e2ba 0%, #2accab 63%, #14b7b9 100%);
-      padding: 2%;
-      margin-left: auto;
-      margin-right: auto;
-      margin-bottom : 10%;
-      border-radius: 30px;
-      color: white;
-      font-size: 15px;
-      font-weight: 600;
-      &:hover {      
-        background: linear-gradient(133deg, #56f0c9 0%, #44e6c5 63%, #28e1e4 100%);
-        box-shadow: 2px 1px 4px rgba(89, 175, 240, 0.2);
-        transition: .1s ease all;
-        transform: translateY(-0.8px);
+  .buttons {
+    width: 60%;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 600;
+    margin: 0% auto 6% auto;
+    a {
+      text-decoration: none;
+      .btn-p {
+        margin-bottom: 4%;
+        border-radius: 30px;
+        background: rgb(25, 25, 25);
+        padding: 4%;
+        color: white;
+        &:hover {      
+          background: linear-gradient(133deg, #56f0c9 0%, #44e6c5 63%, #28e1e4 100%);
+          box-shadow: 2px 1px 4px rgba(89, 175, 240, 0.2);
+          transition: .1s ease all;
+          //transform: translateY(-0.8px);
+        }
+      }
+      .btn-s {
+        border-radius: 30px;
+        background-color: rgba(255, 255, 255, 1);
+        border: solid rgba(25, 25, 25, 1) 2px;
+        padding: 2%;
+        color: rgb(25, 25, 25);
+        &:hover {
+          color: rgb(250, 250, 250);      
+          background: rgba(25, 25, 25, 1);
+          box-shadow: 2px 1px 4px rgba(89, 175, 240, 0.2);
+          transition: .1s ease all;
+          //transform: translateY(-0.8px);
+        }
       }
     }
   }
   .softwares {
     width: 100%;
     padding: 7% 12%;
-    background-color: rgb(70, 70, 70);
+    background-color: rgb(50, 50, 50);
     border-radius: 20px;
     h1 {
       text-align: center;
