@@ -6,9 +6,7 @@
   </div>
 </div>
 
-<%# <div class='partenaires'>
 
-</div> %>
 
 <div id="home-content">
   <div id="home-left">
@@ -45,7 +43,7 @@
       <h3><i class="fas fa-map-marker-alt"></i> Paris, France</h3>
       <div class='buttons'>
         <%= link_to works_path do %><div class='btn-p'>Contact me</div><% end %>
-        <%= link_to works_path do %><div class='btn-s'>See work</div><% end %>
+        <%#= link_to works_path do %><%#<div class='btn-s'>See work</div><%# end %>
       </div>
       <div class='softwares'>
         <h1>used languages & softwares</h1>
@@ -64,4 +62,24 @@
       </div>
     </div>
   </div>
+</div>
+
+<div class='my-work'>
+  <h3>Last projects</h3>
+  <%= link_to works_path do %><div class='btn-s'>See all work ></div><% end %>
+  <div class="cards">
+    <% @works.each do |work| %>
+      <div class="card-category" style="background-image: url(https://mir-s3-cdn-cf.behance.net/project_modules/fs/95c7d978078787.5c9ec45391db3.png)">
+          <%#= image_tag 'Illustrations-01.png', class: 'card-img', alt: 'design' %>
+          <%# <div class='card-info'> %>
+        <%= work.name %>
+          <%# <p><%= work.description</p> %>
+          <%# </div> %>
+      </div>
+    <% end %>
+  </div>
+</div>
+
+<div class='partenaires'>
+  <h3>Ils me font confiance</h3>
 </div>

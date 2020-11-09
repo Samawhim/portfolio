@@ -39,34 +39,32 @@ soumano = Work.create!(
   My mission was to accompany Soumano through it's transformation with a durable identity to affirm the premium quality of it's creations and collections to come."
 )
 
-umama = Work.create!(
-  name: "Umama",
-  category: "Design graphique",
-  description: "-
-  Umama is restaurant which spécialises in African food. Based in Paris' area, their jungle theme decoration and exquisite food attracts lots of clients every night.
+# umama = Work.create!(
+#   name: "Umama",
+#   category: "Design graphique",
+#   description: "-
+#   Umama is restaurant which spécialises in African food. Based in Paris' area, their jungle theme decoration and exquisite food attracts lots of clients every night.
   
-  -
-  Art direction & Visual Identity : Harold Ngano / Brand Opera
-  Photo credit : Harold Ngano
+#   -
+#   Art direction & Visual Identity : Harold Ngano / Brand Opera
+#   Photo credit : Harold Ngano
   
   
-  Work
-  -
-  This is work I've done with the agency Brand Opera. My mission was to redesign the already existing supports, capture the restaurant's unique mood and create social media content on New year Eve's occasion."
-)
+#   Work
+#   -
+#   This is work I've done with the agency Brand Opera. My mission was to redesign the already existing supports, capture the restaurant's unique mood and create social media content on New year Eve's occasion."
+# )
 
-illusio = Work.create!(
-  name: "Illusio",
-  category: "Design graphique",
-  description: "-
-  Illusio is a design and communication agency specialized in the real estate field.
-  https://www.illusio.fr/
-  ​​​​​​​
-  Brief
-  -
-  Our clients came to us needing the tools to promote their real estate projects. For the design team I was part of, the idea is always to create unique and distinguished content. The challenge is always the same : Allow good lisibility and understanding of the client's project (name, location, access, promoteur etc.) without compromising on the aesthetic of our supports.
+# illusio = Work.create!(
+#   name: "Illusio",
+#   category: "Design graphique",
+#   description: "-
+#   Illusio is a design and communication agency specialized in the real estate field.
+#   https://www.illusio.fr/
+#   ​​​​​​​
+#   Brief
+#   -
+#   Our clients came to us needing the tools to promote their real estate projects. For the design team I was part of, the idea is always to create unique and distinguished content. The challenge is always the same : Allow good lisibility and understanding of the client's project (name, location, access, promoteur etc.) without compromising on the aesthetic of our supports.
   
-  Here are a few exemples of the projects I worked on at Illusio. These includes the creation of logos, visual identities, brochures, flyers, advertising posters, emailings and landing pages."
-)
-
-p "Created #{Work.count} movies"
+#   Here are a few exemples of the projects I worked on at Illusio. These includes the creation of logos, visual identities, brochures, flyers, advertising posters, emailings and landing pages."
+# )
